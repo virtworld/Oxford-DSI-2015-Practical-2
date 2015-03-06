@@ -1,0 +1,19 @@
+#include "../include/frame.h"
+
+Frame::Frame()
+{
+  this->data = new Page();
+  this->PageID = INVALID_PAGE;
+  this->pinCount = 0;
+  this->dirty = 0;
+}
+
+Frame::~Frame()
+{
+
+}
+
+Frame::GetPageID()
+{
+  return this->PageID;
+}
